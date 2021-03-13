@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'PortfolioHeader', 
+  name: 'PortfolioHeader',
   data() {
     return {
       title: 'Y. U\'s Portfolio Site',
@@ -52,15 +52,15 @@ export default {
       });
       } else if(navname.id===2){
         window.scrollTo({
-          top: 5200,
+          top: 5300,
           behavior: 'smooth'
         });
       } else {
         window.scrollTo({
-          top: 6800,
+          top: 6900,
           behavior: 'smooth'
         });
-      }    
+      }
     }
   }
 }
@@ -79,13 +79,13 @@ export default {
 }
 
 .header-nav {
-  font-size: 25px; 
-  color: #ffffff; 
-  padding-left: 0px; 
+  font-size: 25px;
+  color: #ffffff;
+  padding-left: 0px;
   margin-right: 20px;
-  list-style: none; 
+  list-style: none;
   float: right;
-  width: 50%; 
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
@@ -93,14 +93,14 @@ export default {
 .header-nav li {
   list-style: none;
   cursor: pointer;
-  
+
 }
 
 .pc-site-title {
   display: block;
-  font-size: 75px; 
+  font-size: 75px;
   font-weight: bold;
-  text-align: center; 
+  text-align: center;
   margin-top: 170px;
   color: #ffffff;
   text-shadow:0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000,0 0 2px #000;
@@ -182,7 +182,7 @@ export default {
     font-size: 13vw;
     text-shadow:0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000;
     color: #ffffff;
-    margin-top: 150px;   
+    margin-top: 150px;
   }
 
   .sp-site-title2 {
@@ -191,7 +191,7 @@ export default {
     font-size: 13vw;
     text-shadow:0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000;
     color: #ffffff;
-    margin-top: -40px;   
+    margin-top: -40px;
   }
 
   .header-nav {

@@ -9,7 +9,6 @@
         <li><router-link class="works-header-router" to="ureshii">/ リスト</router-link></li>
         <li><router-link class="works-header-router" to="TMTSite">/ Appサイト</router-link></li>
         <li><router-link class="works-header-router" to="TMTApp">/ NativeApp</router-link></li>
-        <!-- <li><router-link class="works-header-router" to="wp1">/ WP</router-link></li> -->
       </ul>
     <div class="sp-works-ul">
       <ul>
@@ -19,7 +18,6 @@
         <li><router-link class="works-header-router" to="ureshii">/ リスト</router-link></li>
         <li><router-link class="works-header-router" to="TMTSite">/ Appサイト</router-link></li>
         <li><router-link class="works-header-router" to="TMTApp">/ NativeApp</router-link></li>
-        <!-- <li><router-link class="works-header-router" to="wp1">/ WP</router-link></li> -->
       </ul>
     </div>
     </div>
@@ -27,7 +25,7 @@
     <div class="portfoliointro-content">
       <div class="img-box">
         <img class="site-img animate__animated animate__flipInX" src="../assets/works/portfolio2.jpg" alt="">
-        <p class="site-link-box"><a href="https://github.com/y-coffee/portfolio" target="_blank">Githubはこちらから<img  class="site-link-img" src="../assets/works/newpage.png"></a></p>
+        <p class="site-link-box"><a href="https://github.com/y-coffee/portfolio-vue" target="_blank">Githubはこちらから<img  class="site-link-img" src="../assets/works/newpage.png"></a></p>
       </div>
       <div class="skills-box">
         <h2>－ 使用言語・ツール －</h2>
@@ -43,7 +41,7 @@
     </div>
     <div class="clearfix"></div>
     <div class="portfoliointro-intro-box">
-      <div class="portfoliointro-intro"><h3>－ 制作期間 －</h3><br> 約1.5ヶ月。3つ目のサイトです。<br><br><h3>－ 設定 －</h3><br>私自身のポートフォリオサイト。PC・スマートフォン・タブレットのレスポンシブ対応。<br><br><h3>－ 内容 －</h3><br><span style="font-weight: bold;">＜Vue CLI、Vue Router＞</span><br>Vue.jsを用いたSPAサイトの制作をしてみたいと思い、Vue CLI3を用いて本サイトの構築に取り組みました。<br>縦長ランディングページ式のTOPページに主要な情報を大まかにまとめ、これまでに制作したWebサイトの詳細情報についての個別ページを「Works」内で紹介しています。TOPページとこれらのページをVue Routerを用いてつないでいます。<br><br><span style="font-weight: bold;">＜v-onディレクティブ＞</span><br>TOPページ最上部のナビゲーションバー内にある「Skills」「Works」「About and Contact」がクリックされると、該当する項目へとスムーズにスクロールされるように設定しています。このメソッドは、リストレンダリングで生成したli要素へと入れられる変数を引数に取りそれと配列キーとを一緒に用いて条件分岐付きのメソッドの形で実装しました。また、一定距離スクロールされると画面右下にTOPページ最上部へと戻るためのボタン(Font Awesome)が表示されるようにしてあります。<br><br><span style="font-weight: bold;">＜v-for・v-bindディレクティブ、props＞</span><br>Vue.jsの強みである修正・保守のしやすさを支えるUI部品の再利用を行っています。たとえば、「Skills」内にある画像付きの説明パートはコンポーネント化してtable要素の内容をv-forディレクティブで生成しています。同内容はオブジェクトとしてまとめ、画像のsrcをv-bind、説明のテキストを宣言的レンダリングで表示させています。パート毎のサブタイトルもコンポーネント化し親コンポーネントからの情報をpropsで渡しています。<br><br><span style="font-weight: bold;">＜v-model・v-if、axiosを用いた非同期通信＞</span><br>お問い合わせフォームの名前の項目に文字を入力すると「こんにちは、さん」の箇所に入力された名前がレンダリングされるようになっています。また、inputタグに入力された情報は名前と同様にv-modelを用いてバインディングしFirebaseのFirestoreへと送信しています。この非同期通信のために使用されているのはaxiosです。<br>FirebaseのAPIを叩く際にはenvファイルで設定した環境変数を用いています。<br>送信ボタンがクリックされた際に入力項目に漏れがあると送信せずにエラー項目を表示するメソッドと、メールアドレス入力が形式としてメールアドレスになっているかのバリデーションをするメソッドが実装されています。また、エラー項目はエラーが見つかって初めて表示されるようにv-ifによってコントロールされています。<br><br>今後は、ページスクロールに合わせたアニメーションの実装やバックエンド側の知識を身に着けていきたいと思っています。</div>
+      <div class="portfoliointro-intro"><h3>－ 制作期間 －</h3><br> 約1.5ヶ月。3つ目のサイトです。<br><br><h3>－ 設定 －</h3><br>私自身のポートフォリオサイト。PC・スマートフォン・タブレットのレスポンシブ対応。<br><br><h3>－ 内容 －</h3><br><span style="font-weight: bold;">＜Vue CLI、Vue Router＞</span><br>Vue.jsを用いたSPAサイトの制作をしてみたいと思い、Vue CLI3を用いて本サイトの構築に取り組みました。<br>縦長ランディングページ式のTOPページに主要な情報を大まかにまとめ、これまでに制作したWebサイトの詳細情報についての個別ページを「Works」内で紹介しています。TOPページとこれらのページをVue Routerを用いてつないでいます。<br><br><span style="font-weight: bold;">＜v-onディレクティブ＞</span><br>TOPページ最上部のナビゲーションバー内にある「Skills」「Works」「About and Contact」がクリックされると、該当する項目へとスムーズにスクロールされるように設定しています。このメソッドは、リストレンダリングで生成したli要素へと入れられる変数を引数に取りそれと配列キーとを一緒に用いて条件分岐付きのメソッドの形で実装しました。また、一定距離スクロールされると画面右下にTOPページ最上部へと戻るためのボタン(Font Awesome)が表示されるようにしてあります。<br><br><span style="font-weight: bold;">＜v-for・v-bindディレクティブ、props＞</span><br>Vue.jsの強みである修正・保守のしやすさを支えるUI部品の再利用を行っています。たとえば、「Skills」内にある画像付きの説明パートはコンポーネント化してtable要素の内容をv-forディレクティブで生成しています。同内容はオブジェクトとしてまとめ、画像のsrcをv-bind、説明のテキストを宣言的レンダリングで表示させています。パート毎のサブタイトルもコンポーネント化し親コンポーネントからの情報をpropsで渡しています。<br><br><span style="font-weight: bold;">＜v-model・v-if、axiosを用いた非同期処理＞</span><br>お問い合わせフォームの名前の項目に文字を入力すると「こんにちは、さん」の箇所に入力された名前がレンダリングされるようになっています。また、inputタグに入力された情報は名前と同様にv-modelを用いてバインディングしFirebaseのFirestoreへと送信しています。この非同期処理のために使用されているのはaxiosです。<br>FirebaseのAPIを叩く際にはenvファイルで設定した環境変数を用いています。<br>送信ボタンがクリックされた際に入力項目に漏れがあると送信せずにエラー項目を表示するメソッドと、メールアドレス入力が形式としてメールアドレスになっているかのバリデーションをするメソッドが実装されています。また、エラー項目はエラーが見つかって初めて表示されるようにv-ifによってコントロールされています。<br><br>今後は、ページスクロールに合わせたアニメーションの実装やバックエンド側の知識を身に着けていきたいと思っています。</div>
     </div>
     <footer><p>(C)2020 Smash Create</p></footer>
   </div>
@@ -174,7 +172,7 @@ export default {
 
 .site-img {
   width: 100%;
-  height: 400px;
+  height: 330px;
   margin-top: 20px;
   box-shadow: 5px 5px 0.01px 0 #dddddd;
 }

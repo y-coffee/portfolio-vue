@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mobile-header">
-      <font-awesome-icon v-on:click="show=!show" class="humberger-button" icon="bars" size="2x" :style="{color: '#ffffff'}"></font-awesome-icon>     
+      <font-awesome-icon v-on:click="show=!show" class="humberger-button" icon="bars" size="2x" :style="{color: '#ffffff'}"></font-awesome-icon>
       <nav class="humberger-menu" v-show="show">
         <ul v-for="navname in navnames" v-bind:key="navname.id">
           <li v-on:click="show=!show; spScroll(navname)" class="nav-item">{{ navname.name }}</li>
@@ -46,15 +46,15 @@ export default {
         });
         } else if(navname.id===2){
           window.scrollTo({
-            top: 5700,
+            top: 5750,
             behavior: 'smooth'
           });
         } else {
           window.scrollTo({
-            top: 8300,
+            top: 8050,
             behavior: 'smooth'
           });
-        }           
+        }
       } else if (window.matchMedia('(min-width: 480px) and (max-width: 896px)').matches){
         if(navname.id===1){
           window.scrollTo({
@@ -63,12 +63,12 @@ export default {
         });
         } else if(navname.id===2){
           window.scrollTo({
-            top: 7000,
+            top: 6950,
             behavior: 'smooth'
           });
         } else {
           window.scrollTo({
-            top: 12000,
+            top: 11950,
             behavior: 'smooth'
           });
         }
@@ -95,7 +95,7 @@ export default {
     position: fixed;
     z-index: 100;
     background-color: #43A1FF;
-    box-shadow: 0px 10px 0.01px 0 #dddddd;  
+    box-shadow: 0px 10px 0.01px 0 #dddddd;
   }
 
   .humberger-button {
@@ -181,13 +181,13 @@ export default {
   .humberger-menu ul{
     list-style: none;
     padding-top: 100px;
-    -webkit-overflow-scrolling: touch;  
+    -webkit-overflow-scrolling: touch;
   }
 
   .humberger-menu li {
     font-size: 5vw;
     color: #ffffff;
-    margin-bottom: -100px;   
+    margin-bottom: -100px;
   }
 
   .attention {

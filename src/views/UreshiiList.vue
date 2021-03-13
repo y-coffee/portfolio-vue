@@ -42,7 +42,7 @@
     </div>
     <div class="clearfix"></div>
     <div class="ureshii-intro-box">
-      <div class="ureshii-intro"><h3>－ 制作期間 －</h3><br>約2週間。5つ目のWeb(SPA)サイトです。<br><br><h3>－ 設定 －</h3><br>ログイン認証付きのWebアプリケーションサイト。PC・スマートフォン・タブレットのレスポンシブ対応。<br><br><h3>－ 内容 －</h3><br>Firebaseの機能を複数使用して何かしらのWebアプリケーションを作る目的で制作しました。データベースにはFirestore、ユーザー登録にはAuthenticationを利用しています。このサイトを使用できるのは登録者のみで、登録者がログインするとうれしかったことを投稿できるようになります。なお、データの送受信にはFirebaseのSDKを利用せずaxiosを利用しています。<br>FirebaseのAPIを叩く際にはenvファイルで設定した環境変数を用いています。<br><br>Vue Routerを用いてページをつなぎ、ユーザーログイン後にサイト全体でその情報を使用するためVuexを利用しています。Firebaseのログイン期限がきてもリフレッシュトークンが使えるようにし、また、ウィンドウが閉じられた後もユーザーがログアウトしない限りログイン状態が維持されるように自動ログイン機能を実装しています。</div>
+      <div class="ureshii-intro"><h3>－ 制作期間 －</h3><br>約2週間。5つ目のWeb(SPA)サイトです。<br><br><h3>－ 設定 －</h3><br>ログイン認証付きのWebアプリケーションサイト。PC・スマートフォン・タブレットのレスポンシブ対応。<br><br><h3>－ 内容 －</h3><br><span style="font-weight: bold;">＜Firebase＞</span><br>Firebaseの機能を複数使用して何かしらのWebアプリケーションを作る目的で制作しました。データベースにはFirestore、ユーザー登録にはAuthenticationを利用しています。このサイトを使用できるのは登録者のみで、登録者がログインするとうれしかったことを投稿できるようになります。データの送受信のための非同期処理にはFirebaseのSDKではなくaxiosを利用しています。<br>FirebaseのAPIを叩く際にはenvファイルで設定した環境変数を用いています。<br><br><span style="font-weight: bold;">＜Vue Router＞</span><br>Vue Routerを用いてページをつなぎ、ユーザーログイン後にサイト全体でその情報を使用できるようにしています。<br><br><span style="font-weight: bold;">＜Vuex、Store、async/await＞</span><br>上述のログイン情報の保持や、Firebaseのログイン期限がきてもリフレッシュトークンが使えるようにしています。ウィンドウが閉じられた後もユーザーがログアウトしない限りログイン状態が維持されるように自動ログイン機能を実装してもいます。<br>Vuexを利用した状態管理においてこれらのデータを制御し、async/await及びdispatchで非同期処理しています。</div>
     </div>
     <footer><p>(C)2020 Smash Create</p></footer>
   </div>
