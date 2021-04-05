@@ -3,44 +3,50 @@ Name
 
 Y.U's Portfolio Site
 
-## Description
+概要
+====
 
 ![portfolio2](https://user-images.githubusercontent.com/68333078/92983172-c860f000-f4dc-11ea-8d63-33b7b55104fa.jpg)
 
-Vue.jsで制作したレスポンシブ対応のSPAサイトです。Vue Router、Vue CLIを使用しています。
+Vue.jsで制作したレスポンシブ対応のSPAサイトです。スキルや制作物をまとめています。PC・スマートフォン・タブレットのレスポンシブ対応。
 
-CSSやJavaScriptメソッドのレスポンシブ対応はプラグインを使わずコーディングしています。
+サイトURL
+====
 
-使用したディレクティブはv-bind、v-on、v-for、v-model、v-if。コンポーネント間の情報のやりとりはpropsを使用しました。また、お問い合わせフォームに入力されたデータはaxiosでバックエンドのFirebaseのWeb APIを叩いて保存しています。
+サイトはこちらからどうぞ：[リンク](https://y-u-portfolio.netlify.app/)
 
-Skills、Works、About and Contactのパートがあり、Worksではこれまでに作ったレスポンシブ対応WebサイトとWebアプリケーションをご紹介しております。
+使用技術一覧(言語・ライブラリ・ツール)
+===
 
-■ 使用言語・ツール：Vue.js/Firebase/Adobe Photoshop/Adobe XD
+・Vue.js 2.6.11
 
-■ サイトはこちらからどうぞ：[リンク(外部)](https://y-u-portfolio.netlify.app/)
+・Vue Router 3.3.4
 
+・axios 0.19.2(お問い合わせフォームの非同期通信)
 
+・Bootstrap 4.5.0
 
+・Font Awesome 5.13.1(スマートフォンのハンバーガーメニュー用アイコン)
 
-## Project setup
-```
-npm install
-```
+・Animate.css
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+・Firebase(SDK未使用)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+・Adobe Photoshop(画像の編集加工)
 
-### Lints and fixes files
-```
-npm run lint
-```
+・Adobe XD(デザインカンプ)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Vue.js
+
+保守管理がしやすいように再利用可能なものはコンポーネント化しています。また、TOPページのナビゲーションバーをクリックすると該当箇所へスクロールする機能にv-on、スキル群の画像と説明の生成にv-for(各要素はオブジェクトとしてまとめ、画像はv-bindによって、説明文は宣言的レンダリングによって表示させています)、お問い合わせフォームに入力された内容をブラウザ側に表示させるためにv-model(入力内容に誤りがあった場合はv-ifにてバリデーションの結果が表示されます)といったように、Vue.jsが持つ各種ディレクティブを使用しています。CSSやJavaScriptメソッドのレスポンシブ対応はプラグインを使わずコーディングしています。
+
+※Firebaseに関するデータはenvファイル内で環境変数にしています。
+
+機能一覧
+===
+
+・ページ遷移機能(Vue Router)
+
+・画像アニメーション(Animate.css)
+
+・お問い合わせフォーム(FirebaseのFirestoreをデータベースに利用)
