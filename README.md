@@ -3,7 +3,7 @@
 
 Y.U's Portfolio Site
 
-[サイトURL]#サイトURL
+[サイトURL](#サイトURL)
 
 
 概要
