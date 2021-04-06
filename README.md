@@ -3,9 +3,6 @@
 
 Y.U's Portfolio Site
 
-[サイトURL](#サイトURL)
-
-
 概要
 ====
 
