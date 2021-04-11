@@ -18,23 +18,23 @@ Vue.jsで制作したレスポンシブ対応のSPAサイトです。スキル�
 使用技術一覧(言語・ライブラリ・ツール)
 ===
 
-・Vue.js 2.6.11
+- Vue.js 2.6.11
 
-・Vue Router 3.3.4
+- Vue Router 3.3.4
 
-・axios 0.19.2(お問い合わせフォームの非同期通信)
+- axios 0.19.2(お問い合わせフォームの非同期通信)
 
-・Bootstrap 4.5.0
+- Bootstrap 4.5.0
 
-・Font Awesome 5.13.1(スマートフォンのハンバーガーメニュー用アイコン)
+- Font Awesome 5.13.1(スマートフォンのハンバーガーメニュー用アイコン)
 
-・Animate.css
+- Animate.css
 
-・Firebase(SDK未使用)
+- Firebase(SDK未使用)
 
-・Adobe Photoshop(画像の編集加工)
+- Adobe Photoshop(画像の編集加工)
 
-・Adobe XD(デザインカンプ)
+- Adobe XD(デザインカンプ)
 
 ## Vue.js
 
@@ -45,8 +45,8 @@ Vue.jsで制作したレスポンシブ対応のSPAサイトです。スキル�
 機能一覧
 ===
 
-・ページ遷移機能(Vue Router)
+- ページ遷移機能(Vue Router)
 
-・画像アニメーション(Animate.css)
+- 画像アニメーション(Animate.css)
 
-・お問い合わせフォーム(FirebaseのFirestoreをデータベースに利用)
+- お問い合わせフォーム(FirebaseのFirestoreをデータベースに利用)
