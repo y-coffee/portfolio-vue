@@ -42,7 +42,7 @@
     </div>
     <div class="clearfix"></div>
     <div class="ureshii-intro-box">
-      <div class="ureshii-intro"><h3>－ 制作期間 －</h3><br>約2ヶ月。無料のCRUDネイティブアプリです。<br>※現在未実装の機能やコロナ禍による申請時間の長期間化によって少し時間がかかりました。<br><br><h3>－ 設定 －</h3><br>Android対応アプリ「今日のトレメニュー」です。<br>トレーニングメニューの記録のためにノートや筆記用具を持参せずに、荷物を減らした状態でジムに臨めるようになります。<br>また、メニューの編集画面には電卓が実装されており、バーベルやダンベルの挙上重量の計算を行いながらメニューの加筆修正をすることが可能になっています。<br>自身の趣味の1つにトレーニングがあり、その際に感じていた不便を解決したかったという目的がありました。<br><br><h3>－ 内容 －</h3><br><span style="font-weight: bold;">＜React Native＞</span><br>一覧で表示されるトレーニングメニューやチュートリアル画面など再利用可能なUI部品はコンポーネントにし、適宜propsを渡したりstyleをあてたりしています。ScrollViewでメニュー閲覧・編集時のUXを高めたり、KeybordAvoidingViewでキーボードの挙動を制御してメニュー作成時にストレスが生じないようなUXにしました。<br><br><span style="font-weight: bold;">＜useState、useEffect＞</span><br>Firebaseに保存されている諸情報をクライアント側に表示する際と電卓の制御にuseStateを用いています。電卓では単に数字を取り扱うだけでなくbool型を用いた演算の制御のために使われています。<br>また、Firestoreからクライアント側にユーザーに紐づいた諸情報が表示される際にはuseEffectも利用されています。<br><br><span style="font-weight: bold;">＜Firebase＞</span><br>FirebaseのAuthenticationを利用しユーザー認証機能を実装しています。また、ユーザーに紐づいた諸情報はFirestoreに保存され、ユーザーの動作によって編集されたり削除されたりします。ユーザーは他のユーザーの諸情報にアクセスすることはできません。<br><br><span style="font-weight: bold;">＜ESLint＞</span><br>Airbnbのスタイルガイドを利用しました。</div>
+      <div class="ureshii-intro"><h3>－ 制作期間 －</h3><br>約2ヶ月。Android対応の無料CRUDネイティブアプリです。<br><br><h3>－ 設定 －</h3><br>コンセプトは「少ない荷物でジムに向かい筋トレができる」です。このアプリにより、トレーニングメニューの記録のためにノートや筆記用具を持参する必要がなくなり、荷物を減らした状態でジムに臨めるようになります。<br>メニューの編集画面には電卓が実装されており、バーベルやダンベルの挙上重量の計算を行いながらメニューの加筆修正をすることが可能になっています。<br>自身の趣味の1つにトレーニングがあり、その際に感じていた不便を解決したかったという目的がありました。<br><br><h3>－ 内容 －</h3><br><span style="font-weight: bold;">＜React Native＞</span><br>一覧で表示されるトレーニングメニューやチュートリアル画面など再利用可能なUI部品はコンポーネントにし、適宜propsを渡したりstyleをあてたりしています。ScrollViewでメニュー閲覧・編集時のUXを高めたり、KeybordAvoidingViewでキーボードの挙動を制御してメニュー作成時にストレスが生じないようなUXにしました。<br><br><span style="font-weight: bold;">＜useState、useEffect＞</span><br>Firebaseに保存されている諸情報をクライアント側に表示する際と電卓の制御にuseStateを用いています。電卓では単に数字を取り扱うだけでなくbool型を用いた演算の制御のために使われています。<br>また、Firestoreからクライアント側にユーザーに紐づいたデータをメニューとして表示するため、useEffectも利用されています。<br><br><span style="font-weight: bold;">＜Firebase＞</span><br>FirebaseのAuthenticationを利用しユーザー認証機能を実装しています。また、ユーザーに紐づいたデータはFirestoreに保存され、ユーザーの動作によって編集されたり削除されたりします。ユーザーは他のユーザーデータにアクセスすることはできません。<br><br><span style="font-weight: bold;">＜ESLint＞</span><br>Airbnbのスタイルガイドを利用しました。</div>
     </div>
     <footer><p>(C)2020 Smash Create</p></footer>
   </div>
@@ -63,7 +63,7 @@ export default {
         {
           id: 2,
           image: require('../assets/skills/expo-logo.png'),
-          explain: 'クライアント側(Android)でコードやプログラミングをチェックをしたり、アプリをビルドするために利用。'
+          explain: 'クライアントサイドでコードやプログラミングをチェックをしたり、アプリをビルドするために利用。'
         },
         {
           id: 3,
@@ -73,7 +73,7 @@ export default {
         {
           id: 4,
           image: require('../assets/skills/firebase-logo.png'),
-          explain: 'ログイン認証やユーザーが作成したメニューの情報を保存。'
+          explain: 'ログイン認証機能やユーザーが作成したメニューの保存のために利用。'
         },
         {
           id: 5,

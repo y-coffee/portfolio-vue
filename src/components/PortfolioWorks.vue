@@ -42,7 +42,7 @@ export default {
          url: 'TMTApp'
         },
         {id: 4,
-         title: '－ 架空NativeApp紹介サイト －',
+         title: '－ NativeApp紹介サイト －',
          image: require('../assets/works/tremenu-site-firstview.png'),
          url: 'TMTSite'
         },
